@@ -10,8 +10,19 @@ public class Calculator {
         System.out.print("Enter second number: ");
         int num2 = scanner.nextInt();
 
-      int difference = num1 - num2;
-System.out.println("The difference is: " + difference);
+
+      int product = num1 * num2;
+System.out.println("The product is: " + product);
+
+     if (num2 != 0) {
+    double quotient = (double) num1 / num2;
+    System.out.println("The quotient is: " + quotient);
+} else {
+    System.out.println("Division by zero is not allowed.");
+}
+
+
+
 
     }
 }
